@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4099F322386DF7E000AC00D /* BodyMassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4099F302386DF7E000AC00D /* BodyMassTableViewCell.swift */; };
+		A4099F332386DF7E000AC00D /* BodyMassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4099F312386DF7E000AC00D /* BodyMassTableViewCell.xib */; };
+		A4099F352386E780000AC00D /* Utils+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4099F342386E780000AC00D /* Utils+Extensions.swift */; };
+		A4439EB923839C0E004AFF24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4439EB823839C0E004AFF24 /* AppDelegate.swift */; };
+		A4439EBD23839C0E004AFF24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4439EBC23839C0E004AFF24 /* ViewController.swift */; };
+		A4439EC023839C0E004AFF24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4439EBE23839C0E004AFF24 /* Main.storyboard */; };
+		A4439EC223839C10004AFF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4439EC123839C10004AFF24 /* Assets.xcassets */; };
+		A4439EC523839C10004AFF24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4439EC323839C10004AFF24 /* LaunchScreen.storyboard */; };
+		A4439ECE23839CEF004AFF24 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A4439ECD23839CEF004AFF24 /* RealmSwift */; };
+		A4439ED123839D6F004AFF24 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A4439ED023839D6F004AFF24 /* Alamofire */; };
+		A4439ED52383A313004AFF24 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4439ED42383A313004AFF24 /* HealthKit.framework */; };
+		A4511AA023850B1500312DBD /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4511A9F23850B1500312DBD /* HealthKitManager.swift */; };
+		A4511AA323852AF400312DBD /* BodyMassData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4511AA223852AF400312DBD /* BodyMassData.swift */; };
+		A4511AA523852B4100312DBD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A4511AA423852B4100312DBD /* Realm */; };
+		A4511AA723852E6600312DBD /* BodyMassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4511AA623852E6600312DBD /* BodyMassManager.swift */; };
+		A4511AA9238543CE00312DBD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4511AA8238543CE00312DBD /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4099F302386DF7E000AC00D /* BodyMassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassTableViewCell.swift; sourceTree = "<group>"; };
+		A4099F312386DF7E000AC00D /* BodyMassTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyMassTableViewCell.xib; sourceTree = "<group>"; };
+		A4099F342386E780000AC00D /* Utils+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+Extensions.swift"; sourceTree = "<group>"; };
+		A4439EB523839C0E004AFF24 /* Weight Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4439EB823839C0E004AFF24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4439EBC23839C0E004AFF24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4439EBF23839C0E004AFF24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4439EC123839C10004AFF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4439EC423839C10004AFF24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4439EC623839C10004AFF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4439ED22383A313004AFF24 /* Weight Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Weight Tracker.entitlements"; sourceTree = "<group>"; };
+		A4439ED42383A313004AFF24 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		A4511A9F23850B1500312DBD /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		A4511AA223852AF400312DBD /* BodyMassData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassData.swift; sourceTree = "<group>"; };
+		A4511AA623852E6600312DBD /* BodyMassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassManager.swift; sourceTree = "<group>"; };
+		A4511AA8238543CE00312DBD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4439EB223839C0E004AFF24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4439ED52383A313004AFF24 /* HealthKit.framework in Frameworks */,
+				A4439ECE23839CEF004AFF24 /* RealmSwift in Frameworks */,
+				A4511AA523852B4100312DBD /* Realm in Frameworks */,
+				A4439ED123839D6F004AFF24 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4099F2F2386DDB9000AC00D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4099F302386DF7E000AC00D /* BodyMassTableViewCell.swift */,
+				A4099F312386DF7E000AC00D /* BodyMassTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4099F362386EC43000AC00D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A4511A9F23850B1500312DBD /* HealthKitManager.swift */,
+				A4511AA623852E6600312DBD /* BodyMassManager.swift */,
+				A4511AA8238543CE00312DBD /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A4099F372386EC5A000AC00D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4439EBC23839C0E004AFF24 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4099F382386EC69000AC00D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4099F342386E780000AC00D /* Utils+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4439EAC23839C0E004AFF24 = {
+			isa = PBXGroup;
+			children = (
+				A4439EB723839C0E004AFF24 /* weight-tracker */,
+				A4439EB623839C0E004AFF24 /* Products */,
+				A4439ED32383A313004AFF24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4439EB623839C0E004AFF24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4439EB523839C0E004AFF24 /* Weight Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4439EB723839C0E004AFF24 /* weight-tracker */ = {
+			isa = PBXGroup;
+			children = (
+				A4099F382386EC69000AC00D /* Utils */,
+				A4099F372386EC5A000AC00D /* Controller */,
+				A4099F362386EC43000AC00D /* Manager */,
+				A4511AA123852ADD00312DBD /* Data */,
+				A4099F2F2386DDB9000AC00D /* View */,
+				A4439ED22383A313004AFF24 /* Weight Tracker.entitlements */,
+				A4439EB823839C0E004AFF24 /* AppDelegate.swift */,
+				A4439EBE23839C0E004AFF24 /* Main.storyboard */,
+				A4439EC123839C10004AFF24 /* Assets.xcassets */,
+				A4439EC323839C10004AFF24 /* LaunchScreen.storyboard */,
+				A4439EC623839C10004AFF24 /* Info.plist */,
+			);
+			path = "weight-tracker";
+			sourceTree = "<group>";
+		};
+		A4439ED32383A313004AFF24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4439ED42383A313004AFF24 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4511AA123852ADD00312DBD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A4511AA223852AF400312DBD /* BodyMassData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4439EB423839C0E004AFF24 /* weight-tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4439EC923839C10004AFF24 /* Build configuration list for PBXNativeTarget "weight-tracker" */;
+			buildPhases = (
+				A4439EB123839C0E004AFF24 /* Sources */,
+				A4439EB223839C0E004AFF24 /* Frameworks */,
+				A4439EB323839C0E004AFF24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "weight-tracker";
+			packageProductDependencies = (
+				A4439ECD23839CEF004AFF24 /* RealmSwift */,
+				A4439ED023839D6F004AFF24 /* Alamofire */,
+				A4511AA423852B4100312DBD /* Realm */,
+			);
+			productName = weightracker;
+			productReference = A4439EB523839C0E004AFF24 /* Weight Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4439EAD23839C0E004AFF24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Profusa;
+				TargetAttributes = {
+					A4439EB423839C0E004AFF24 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = A4439EB023839C0E004AFF24 /* Build configuration list for PBXProject "weight-tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4439EAC23839C0E004AFF24;
+			packageReferences = (
+				A4439ECC23839CEF004AFF24 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				A4439ECF23839D6F004AFF24 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = A4439EB623839C0E004AFF24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4439EB423839C0E004AFF24 /* weight-tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4439EB323839C0E004AFF24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4439EC523839C10004AFF24 /* LaunchScreen.storyboard in Resources */,
+				A4439EC223839C10004AFF24 /* Assets.xcassets in Resources */,
+				A4439EC023839C0E004AFF24 /* Main.storyboard in Resources */,
+				A4099F332386DF7E000AC00D /* BodyMassTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4439EB123839C0E004AFF24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4511AA9238543CE00312DBD /* NetworkManager.swift in Sources */,
+				A4511AA723852E6600312DBD /* BodyMassManager.swift in Sources */,
+				A4099F322386DF7E000AC00D /* BodyMassTableViewCell.swift in Sources */,
+				A4439EBD23839C0E004AFF24 /* ViewController.swift in Sources */,
+				A4511AA323852AF400312DBD /* BodyMassData.swift in Sources */,
+				A4099F352386E780000AC00D /* Utils+Extensions.swift in Sources */,
+				A4439EB923839C0E004AFF24 /* AppDelegate.swift in Sources */,
+				A4511AA023850B1500312DBD /* HealthKitManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4439EBE23839C0E004AFF24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4439EBF23839C0E004AFF24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4439EC323839C10004AFF24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4439EC423839C10004AFF24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4439EC723839C10004AFF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4439EC823839C10004AFF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4439ECA23839C10004AFF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "weight-tracker/Weight Tracker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "weight-tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdiazmo.weight-tracker";
+				PRODUCT_NAME = "Weight Tracker";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A4439ECB23839C10004AFF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "weight-tracker/Weight Tracker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "weight-tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cdiazmo.weight-tracker";
+				PRODUCT_NAME = "Weight Tracker";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4439EB023839C0E004AFF24 /* Build configuration list for PBXProject "weight-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4439EC723839C10004AFF24 /* Debug */,
+				A4439EC823839C10004AFF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4439EC923839C10004AFF24 /* Build configuration list for PBXNativeTarget "weight-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4439ECA23839C10004AFF24 /* Debug */,
+				A4439ECB23839C10004AFF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4439ECC23839CEF004AFF24 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+		A4439ECF23839D6F004AFF24 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4439ECD23839CEF004AFF24 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4439ECC23839CEF004AFF24 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		A4439ED023839D6F004AFF24 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4439ECF23839D6F004AFF24 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A4511AA423852B4100312DBD /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4439ECC23839CEF004AFF24 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A4439EAD23839C0E004AFF24 /* Project object */;
+}
